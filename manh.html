@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ cá nhân</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(to right, #ffcc80, #ffffff);
+        }
+
+        .profile-container {
+            text-align: center;
+            padding: 20px;
+            background: #ff9800;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 10px;
+        }
+
+        h3 {
+            color: #ff9800;
+            border-bottom: 3px solid #ff9800;
+            padding-bottom: 5px;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        p,
+        ul {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f4f4f4;
+            padding: 12px;
+            margin: 5px 0;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        ul li::before {
+            content: "✔";
+            color: #ff9800;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff9800;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background-color: #e68900;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-container">
+        <h2>Hồ sơ cá nhân</h2>
+        <img src="https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.6435-1/137363292_800889737506007_1585640436710808964_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGosCSTXLsWJqqedLlAu3C0N44Gr733J9Y3jgavvfcn1vNrSEkmlcsEG57Rt-F6fKJldJXs7IzlKClVZhhnvDMs&_nc_ohc=ti2uVLJ7Z5MQ7kNvgFU3iYK&_nc_oc=Adi0wICopasxaledpsPF0Cqi-BB76u11bssN46R5fPTygXeaZmi_QilejTfCAx_KYPI&_nc_zt=24&_nc_ht=scontent.fsgn1-1.fna&_nc_gid=A2llAcTwW6TngsFDet6-hi6&oh=00_AYEA5ZjHcl6vUb3ds6Oq5zHRwivueXTqIG5f-n2yfl8JRA&oe=67F76129"
+            alt="Ảnh đại diện">
+        <p>Hoàng Ngọc Mạnh | Công nghệ phần mềm | Đại học Công nghệ TP.HCM</p>
+        <a href="#" class="button">Liên hệ tôi</a>
+    </div>
+
+    <h3>Thông tin cá nhân</h3>
+    <p><strong>Email:</strong> hoangngocmanh2003@gmail.com</p>
+    <p><strong>Số điện thoại:</strong> 0987-654-321</p>
+
+    <h3>Mục tiêu</h3>
+    <p>Phát triển kỹ năng lập trình, làm việc nhóm và nghiên cứu công nghệ mới để trở thành một kỹ sư phần mềm chuyên
+        nghiệp.</p>
+
+    <h3>Hoạt động tham gia</h3>
+    <ul>
+        <li>Thành viên CLB Lập trình viên trẻ</li>
+        <li>Tham gia hackathon và các cuộc thi lập trình</li>
+        <li>Hỗ trợ giảng dạy lập trình cho sinh viên năm nhất</li>
+    </ul>
+
+    <h3>Các dự án đã tham gia</h3>
+    <ul>
+        <li><strong>Quản lý Thư viện Trực tuyến:</strong> Xây dựng hệ thống giúp sinh viên tra cứu và mượn sách online.
+        </li>
+        <li><strong>Ứng dụng Chat bảo mật:</strong> Phát triển ứng dụng chat sử dụng mã hóa đầu cuối.</li>
+        <li><strong>Website Học trực tuyến:</strong> Thiết kế nền tảng hỗ trợ giảng dạy và học tập từ xa.</li>
+    </ul>
+</body>
+
+</html>
