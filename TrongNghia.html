@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân - [Tên của bạn]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Cấu hình chung */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(120deg, #0044cc, #ff6600);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 34px;
+        }
+
+        header h1 span {
+            color: #FFD700;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #FFD700;
+            color: #333;
+            padding: 12px 25px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        /* Nội dung chính */
+        h2 {
+            font-size: 26px;
+            border-left: 5px solid #ff6600;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Kỹ năng */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background: #0044cc;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Dự án */
+        .project {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #ff6600;
+        }
+
+        /* Liên hệ */
+        #contact p {
+            margin: 5px 0;
+        }
+
+        #contact a {
+            color: #0044cc;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #0044cc;
+            color: white;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Xin chào, tôi là <span>Nguyễn Trọng Nghĩa</span> 👋</h1>
+            <p>Sinh viên Công nghệ thông tin với đam mê kiểm thử phần mềm & lập trình web.</p>
+            <a href="#about" class="btn">Tìm hiểu thêm</a>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>👨‍💻 Về tôi</h2>
+        <p>Xin chào! Tôi là Nguyễn Trọng Nghĩa, sinh viên năm 4 ngành Công nghệ thông tin tại ĐH Công nghệ Tp.HCMHCM. Tôi có niềm yêu thích đặc biệt với lĩnh vực Kiểm thử phần mềm và Phát triển Web.</p>
+        <p>Tôi luôn tìm kiếm cơ hội để áp dụng những kiến thức mình học vào thực tế, đặc biệt là trong lĩnh vực Testing và Automation.</p>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>⚡ Kỹ năng</h2>
+        <ul class="skills-list">
+            <li>✔ Kiểm thử phần mềm (Manual & Automation)</li>
+            <li>✔ Viết Test Case, Test Plan</li>
+            <li>✔ Công cụ: Postman, Selenium, JIRA</li>
+            <li>✔ Lập trình: Java, Python, SQL</li>
+            <li>✔ HTML, CSS, JavaScript, React</li>
+            <li>✔ MySQL, PostgreSQL</li>
+            <li>✔ API Testing</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>📌 Dự án cá nhân</h2>
+        <div class="project">
+            <h3>🔹 Ứng dụng Quản lý Sinh viên</h3>
+            <p>Một ứng dụng giúp quản lý danh sách sinh viên, điểm số và thông tin cá nhân.</p>
+        </div>
+        <div class="project">
+            <h3>🔹 Website Blog về Kiểm thử phần mềm</h3>
+            <p>Chia sẻ kiến thức về Testing, các bài viết về kỹ thuật và công cụ hỗ trợ.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>📬 Liên hệ</h2>
+        <p>📧 Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
+        <p>🔗 LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        <p>🔗 GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+    </section>
+
+    <footer>
+        <p>© 20255 Nguyễn Trọng NghĩaNghĩa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
