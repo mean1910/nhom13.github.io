@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Sinh Viên</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 550px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h2 {
+            color: #0072ff;
+            margin-bottom: 20px;
+        }
+        .info {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+        .label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .student-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #0072ff;
+            transition: transform 0.3s ease;
+        }
+        .student-img:hover {
+            transform: scale(1.2);
+        }
+        .extra-info {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px solid #bdc3c7;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background: #0072ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #005bb5;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Thông Tin Sinh Viên</h2>
+        <img src="data:image/png;base64,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" alt="Ảnh Sinh Viên" class="student-img">
+        <div class="info">
+            <span class="label">Họ và Tên:</span> Nguyễn Văn An
+        </div>
+        <div class="info">
+            <span class="label">Mã Số Sinh Viên:</span> 123456789
+        </div>
+        <div class="info">
+            <span class="label">Lớp:</span> CNTT - K17
+        </div>
+        <div class="info">
+            <span class="label">Email:</span> an.nguyen@example.com
+        </div>
+        <div class="extra-info">
+            <div class="info">
+                <span class="label">Sở thích:</span> Lập trình, Chơi thể thao, Đọc sách
+            </div>
+            <div class="info">
+                <span class="label">Công việc mong muốn:</span> Lập trình viên Full-stack
+            </div>
+            <div class="info">
+                <span class="label">Mục tiêu:</span> Trở thành kỹ sư phần mềm chuyên nghiệp
+            </div>
+            <div class="info">
+                <span class="label">Kỹ năng:</span> HTML, CSS, JavaScript, PHP, MongoDB
+            </div>
+            <div class="info">
+                <span class="label">Ngôn ngữ lập trình yêu thích:</span> JavaScript, Python, C++
+            </div>
+        </div>
+        <button class="button">Xem thêm</button>
+    </div>
+</body>
+</html>
